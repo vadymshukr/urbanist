@@ -1,0 +1,124 @@
+.header{
+	z-index: 100;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	&__inner{
+		max-width: 1200px;
+		margin: 0 auto;
+		display: flex;
+		align-items: flex-end;
+		justify-content: space-between;
+	}
+	&__logo{
+		flex-basis: 150px;
+	}
+
+	&__menu{
+		display: flex;
+		flex-basis: 65%;
+		justify-content: space-between;
+	}
+
+	&__menu-item{
+		display: flex;
+		align-items: flex-end;
+	}
+
+	&__menu-link{
+		color: $mc;
+		text-decoration: none;
+		display: flex;
+		align-items: center;
+		font-size: 16px;
+		line-height: 1;
+		font-weight: 500;
+		margin-bottom: 12px;
+
+		svg{
+			width: 12px;
+			height: 14px;
+			margin-right: 10px;
+		}
+
+		&_phone{
+			svg{
+				width: 11px;
+				height: 11px;
+			}
+		}
+		&_choose-flat{
+			svg{
+				width: 11px;
+				height: 13px;
+			}
+		}
+	}
+	&__btn{
+		outline: none;
+		background: none;
+		border: none;
+		color: $mc;
+		font-family: $default-font;
+		font-weight: 500;
+		font-size: 16px;
+		line-height: 1;
+
+	}
+}
+
+.btn-header{
+	padding: 0;
+	display: flex;
+	align-items: flex-end;
+	&__text{
+		margin-bottom: 12px;
+	}
+	&__inner{
+		margin-left: 20px;
+		height: 100px;
+		width: 35px;
+		background: #907C75;
+		padding: 0 10px 16px;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-end;
+	}
+	&__line{
+		height: 2px;
+		width: 100%;
+		background: $mc;
+		display: block;
+		margin-bottom: 3px;
+		&_short{
+			width: 50%;
+		}
+	}
+}
+
+.lang{
+	position: fixed;
+	top: 25%;
+	left: 0;
+	background: #907C75;
+	width: 100px;
+	height: 35px;
+	display: flex;
+	align-items: center;
+	&__list{
+		padding-left: 50px;
+		height: 20px;
+		overflow: hidden;
+	}
+	&__link{
+		color: #FFF2E4;
+		font-size: 16px;
+		line-height: 1;
+		font-weight: 500;
+		text-decoration: none;
+		margin-right: 6px;
+		cursor: pointer;
+
+	}
+}

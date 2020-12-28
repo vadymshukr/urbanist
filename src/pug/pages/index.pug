@@ -1,0 +1,23 @@
+
+extends ../layout/main
+block variable
+	-
+		var title_page = 'Urbanist'
+		var id_page = ''
+		var class_page = 'home'
+	
+block meta
+	title= title_page
+	meta(name='description', content='')
+block head
+		link(rel='stylesheet', href="./assets/styles/main.min.css")
+block scripts
+	script(defer src='./assets/scripts/index.js')
+	script(defer src='./assets/scripts/home.js')
+	script(defer src='./assets/scripts/about.js')
+
+block content
+
+block footer
+	include ../includes/footer.pug
+

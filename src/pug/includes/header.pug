@@ -1,0 +1,37 @@
+.header
+	.header__inner
+		a(href="/").header__logo
+			+img('icons/urbanist-logo.svg')
+		ul.header__menu
+			li.header__menu-item
+				a(href="#").header__menu-link
+					+svg('webcam')
+					span веб камера
+			li.header__menu-item
+				a(href="#").header__menu-link.header__menu-link_phone
+					+svg('header-phone')
+					span замовити дзвінок
+			li.header__menu-item
+				a(href="#").header__menu-link.header__menu-link_choose-flat
+					+svg('header-key')
+					span обрати квартиру
+			li.header__menu-item
+				button.header__btn.js-menu-btn.btn-header
+					span.btn-header__text меню
+					.btn-header__inner
+						span.btn-header__line
+						span.btn-header__line.btn-header__line_short
+
+.lang
+	ul.lang__list
+		li.lang__item
+			span.lang__link.lang__link_current uk
+			<svg width="6" height="5" viewBox="0 0 6 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<path d="M0 -2.62268e-07L6 0L3 5L0 -2.62268e-07Z" fill="#FFF2E4"/>
+			</svg>
+		li.lang__item
+			a(href="#").lang__link 
+				span ru
+		li.lang__item
+			a(href="#").lang__link 
+				span en
