@@ -12,6 +12,20 @@
 	}
 }
 
+@mixin underline{
+	position: relative;
+	&:after{
+		position: absolute;
+		bottom: -3px;
+		left: 0;
+		content: '';
+		display: block;
+		width: 100%;
+		height: 1px;
+		background: #FFF2E4;
+	}
+}
+
 // Function for converting a px based font-size to rem.
 @function rem($size) {
 	$remSize: $size / 14px;
@@ -57,3 +71,4 @@ $screen-height: 720;
 @function lh($lh, $fz) {
 	@return #{($lh/$fz)}em
 }
+
