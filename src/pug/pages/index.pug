@@ -22,6 +22,20 @@ block content
 		.grid__line
 		.grid__line
 		.grid__line
+	.main-screen
+		.main-screen__gradient
+		.main-screen__text-block
+			h1.main-screen__title.title Perfect choice
+			.main-screen__text 
+				.main-screen__line
+				.main-screen__text-wrapper
+					p Логіка може привести вас. від пункту “А” до пункту “Б”, а уява – куди завгодно. Логіка може привести вас. від пункту пункту “Б”, а уява – куди завгодно
+					a(href="#").main-screen__link 
+						span про комплекс
+						+svg('arrow')
+
+		.main-screen__hero-img
+			+img('home/house.png')
 
 block footer
 	include ../includes/footer.pug

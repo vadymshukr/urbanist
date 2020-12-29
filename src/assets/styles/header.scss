@@ -35,7 +35,10 @@
 		line-height: 1;
 		font-weight: 500;
 		margin-bottom: 12px;
+		span{
 
+			@include underline();
+		}
 		svg{
 			width: 12px;
 			height: 14px;
@@ -99,12 +102,13 @@
 
 .lang{
 	position: fixed;
-	top: 25%;
+	top: 35.5%;
 	left: 0;
 	background: #907C75;
 	width: 100px;
 	height: 35px;
 	display: flex;
+	z-index: 100;
 	align-items: center;
 	&__list{
 		padding-left: 50px;

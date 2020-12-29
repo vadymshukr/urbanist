@@ -95,3 +95,11 @@ body *:focus {
 		background-color: rgba(255, 242, 228, 0.1);	
 	}
 }
+
+.title{
+	color: $wc;
+	font-size: 64px;
+	line-height: 60px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
